@@ -51,10 +51,9 @@ function compare (userChoice, pcChoice){
         playerPoints++;
     } else if (userChoice === pcChoice){
         result.innerHTML = 'Empate';
-        pcPoints++;
     } else {
-            result.innerHTML = '¡Has perdido!';
-            pcPoints++;
+        result.innerHTML = '¡Has perdido!';
+        pcPoints++;
     }
 }
 
