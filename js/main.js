@@ -49,11 +49,12 @@ function compare (userChoice, pcChoice){
     } else if (userChoice === 'paper' && pcChoice === 'rock'){
         result.innerHTML = '¡Has ganado!';
         playerPoints++;
-    } else if (userChoice === 'paper' && pcChoice === 'rock'){
-        result.innerHTML = '¡Has perdido!';
+    } else if (userChoice === pcChoice){
+        result.innerHTML = 'Empate';
         pcPoints++;
     } else {
-        result.innerHTML = 'Empate';
+            result.innerHTML = '¡Has perdido!';
+            pcPoints++;
     }
 }
 
