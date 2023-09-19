@@ -51,7 +51,7 @@ function compare (userChoice, pcChoice){
         playerPoints++;
     } else if (userChoice === 'paper' && pcChoice === 'rock'){
         result.innerHTML = '¡Has perdido!';
-        computerPoints++;
+        pcPoints++;
     } else {
         result.innerHTML = 'Empate';
     }
@@ -59,7 +59,7 @@ function compare (userChoice, pcChoice){
 
 function renderPoints() {
     pointPlayer.innerHTML = `Jugador: ${playerPoints}`;
-    pointPc.innerHTML = `Computadora: ${computerPoints}`;
+    pointPc.innerHTML = `Computadora: ${pcPoints}`;
 }
 
 
