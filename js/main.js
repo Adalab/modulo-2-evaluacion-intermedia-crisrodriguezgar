@@ -61,13 +61,14 @@ function compare (userChoice, pcChoice){
 
 function renderPoints() {
     pointPlayer.innerHTML = `Jugador: ${playerPoints}`;
-    pointPc.innerHTML = `Computadora: ${pcPoints}`;
+    pointPc.innerHTML = `Ordenador: ${pcPoints}`;
 }
 
 
     //función manejadora
 
-function handleClickbutton(){
+function handleClickbutton(event){
+    event.preventDefault();
     const userResult = userChoice();
     const pcResult = pcChoice();
     compare (userResult, pcResult);
