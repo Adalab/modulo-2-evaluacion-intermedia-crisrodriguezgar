@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff4e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  text-align: center;
+  background-color: #fe9393;
+  border-radius: 1rem;
+  padding: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #821417;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.subtitle {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+select,
+button {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #fe9393;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color:#fff4e1;
+    color: #333;
+  }
+}
+.player, .computer{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.result{
+  font-size: 2rem;
+  padding: 1rem;
+  color: #821417;
+}

@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/d65782632e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main>
-      <h1>Juego Piedra, Papel y Tijera</h1>
-      <p>Introduce aquí tu jugada:</p>
+    <main class="main">
+      <h1 class="title">Piedra, Papel y Tijera</h1>
+      <p class="subtitle">Introduce aquí tu jugada:</p>
       <select class="js-select">
-        <option>Seleccione su jugada</option>
+        <option disabled>Seleccione su jugada</option>
         <option value="rock">Piedra</option>
         <option value="paper">Papel</option>
         <option value="scissors">Tijera</option>
@@ -18,11 +20,11 @@
       <button class="js-btn">Jugar</button>
       <!-- <button class="js-btn-reset">Reiniciar</button> -->
       <div>
-        <p class="js-text-result">Vamos a Jugar!</p>
+        <p class=" result js-text-result">¡Vamos a Jugar!</p>
       </div>
       <section>
-        <p class="js-player">Jugador:</p>
-        <p class="js-pc">Computadora:</p>
+        <p class=" player js-player">Jugador:</p>
+        <p class="computer js-pc">Computadora:</p>
       </section>
     </main>
     <script src="./js/main.js"></script>
