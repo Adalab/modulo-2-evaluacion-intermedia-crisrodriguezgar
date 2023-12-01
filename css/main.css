@@ -22,24 +22,36 @@ body {
   border-radius: 1rem;
   padding: 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
 }
 
 .title {
   color: #821417;
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: 'Vina Sans', sans-serif;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 6rem;
+  }
 }
 
 .subtitle {
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 2rem;
+  }
 }
 
 select,
 button {
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   border: 0.1rem solid #fe9393;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -47,17 +59,52 @@ button {
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color:#fff4e1;
+    background-color: #fff4e1;
     color: #333;
   }
 }
-.player, .computer{
+@media (min-width: 768px) {
+  select,
+  button {
+    font-size: 2rem;
+  }
+}
+.player,
+.computer {
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-.result{
-  font-size: 2rem;
+.result {
+  font-size: 1.5rem;
   padding: 1rem;
   color: #821417;
 }
+@media (min-width: 768px) {
+  .result {
+    font-size: 2rem;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 3.5rem;
+  text-align: center;
+  background-color: #fff4e1;
+}
+.copy{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  color: #821417;
+}
+
+.linkedin, .git{
+  font-size: 2rem;
+  padding-block: 2rem;
+  padding-inline: 0.5rem;
+  color: #fe9393;
+}
+
