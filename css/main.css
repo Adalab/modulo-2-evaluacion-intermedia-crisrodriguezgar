@@ -42,7 +42,7 @@ html {
 }
 
 .subtitle {
-  font-family: Arial, sans-serif;
+  font-family: 'Patrick Hand', cursive;
   color: #333;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
@@ -57,6 +57,7 @@ select,
 button {
   padding: 1rem;
   font-size: 1.5rem;
+  font-family: 'Patrick Hand', cursive;
   border: 0.1rem solid #fe9393;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -76,14 +77,14 @@ button {
 }
 .player,
 .computer {
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 .result {
   font-family: 'Shadows Into Light', cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1rem;
   color: #821417;
 }
@@ -98,18 +99,18 @@ footer {
   text-align: center;
   background-color: #fff4e1;
 }
-.copy{
-  display:flex;
+.copy {
+  display: flex;
   justify-content: center;
   flex-direction: column;
   font-size: 1.5rem;
   color: #821417;
 }
 
-.linkedin, .git{
+.linkedin,
+.git {
   font-size: 2rem;
   padding-block: 1.5rem;
   padding-inline: 0.5rem;
   color: #fe9393;
 }
-

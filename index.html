@@ -9,44 +9,51 @@
       src="https://kit.fontawesome.com/d65782632e.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Shadows+Into+Light&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="main">
       <div class="container">
-      <h1 class="title">Piedra, Papel y Tijeras</h1>
-      <p class="subtitle">Introduce aquí tu jugada:</p>
-      <select class="js-select">
-        <option disabled>Seleccione su jugada</option>
-        <option value="rock">Piedra</option>
-        <option value="paper">Papel</option>
-        <option value="scissors">Tijera</option>
-      </select>
-      <button class="js-btn">Jugar</button>
-      <!-- <button class="js-btn-reset">Reiniciar</button> -->
-      <div>
-        <p class="result js-text-result">¡Vamos a Jugar!</p>
+        <h1 class="title">Piedra, Papel y Tijeras</h1>
+        <!-- <p class="subtitle">Introduce aquí tu jugada:</p> -->
+        <form action="">
+          <select class="js-select">
+            <option>Seleccione su jugada</option>
+            <option value="rock">Piedra</option>
+            <option value="paper">Papel</option>
+            <option value="scissors">Tijeras</option>
+          </select>
+          <button class="js-btn">Jugar</button>
+        </form>
+        <!-- <button class="js-btn-reset">Reiniciar</button> -->
+        <div>
+          <p class="result js-text-result">¡Vamos a Jugar!</p>
+        </div>
+        <section>
+          <p class="player js-player">Jugador:</p>
+          <p class="computer js-pc">Ordenador:</p>
+        </section>
       </div>
-      <section>
-        <p class="player js-player">Jugador:</p>
-        <p class="computer js-pc">Ordenador:</p>
-      </section></div>
     </main>
     <footer>
       <div class="copy">
         <small>© crisrodriguezgar 2023</small>
-<div>
-        <a
-          href="https://www.linkedin.com/in/cristinarodriguezgar"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin linkedin"></i
-        ></a>
-        <a href="https://github.com/crisrodriguezgar" target="_blank"
-          ><i class="fa-brands fa-github-alt git"></i
-        ></a>
-      </div></div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/cristinarodriguezgar"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin linkedin"></i
+          ></a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank"
+            ><i class="fa-brands fa-github-alt git"></i
+          ></a>
+        </div>
+      </div>
     </footer>
     <script src="./js/main.js"></script>
   </body>

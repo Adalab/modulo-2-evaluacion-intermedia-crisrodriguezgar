@@ -43,18 +43,18 @@ function pcChoice(){
 
 function compare (userChoice, pcChoice){
     if (userChoice === 'rock' && pcChoice === 'scissors'){
-        result.innerHTML = '¡Has ganado 😊!';
+        result.innerHTML = '¡Has ganado! 😊';
         playerPoints++;
     } else if (userChoice === 'scissors' && pcChoice === 'paper'){
-        result.innerHTML = '¡Has ganado 😊!';
+        result.innerHTML = '¡Has ganado! 😊';
         playerPoints++;
     } else if (userChoice === 'paper' && pcChoice === 'rock'){
-        result.innerHTML = '¡Has ganado 😊!';
+        result.innerHTML = '¡Has ganado! 😊';
         playerPoints++;
     } else if (userChoice === pcChoice){
         result.innerHTML = 'Empate';
     } else {
-        result.innerHTML = '¡Has perdido 😞!';
+        result.innerHTML = '¡Has perdido! 😞';
         pcPoints++;
     }
 }
