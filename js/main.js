@@ -9,6 +9,15 @@ const result = document.querySelector('.js-text-result');
 const pointPlayer = document.querySelector('.js-player');
 const pointPc = document.querySelector('.js-pc');
 
+const imgPaper = document.querySelector('.js-imgPaper');
+const imgRock = document.querySelector('.js-imgRock');
+const imgScissors = document.querySelector('.js-imgScissors');
+
+const imgPaperPC = document.querySelector('.js-imgPaperPC');
+const imgRockPC = document.querySelector('.js-imgRockPC');
+const imgScissorsPC = document.querySelector('.js-imgScissorsPC');
+
+
 /*********Variables Globales********/
 let playerPoints = 0;
 let pcPoints = 0;
@@ -41,7 +50,47 @@ function pcChoice(){
     }
     return result;
 }
+function showPlayerChoice(userChoice) {
+    if (userChoice === 'rock') {
+        imgRock.classList.remove('hidden');
+        imgPaper.classList.add('hidden');
+        imgScissors.classList.add('hidden');
+    } else if (userChoice === 'paper') {
+        imgPaper.classList.remove('hidden');
+        imgScissors.classList.add('hidden');
+        imgRock.classList.add('hidden');
+    } else if (userChoice === 'scissors') {
+        imgScissors.classList.remove('hidden');
+        imgRock.classList.add('hidden');
+        imgPaper.classList.add('hidden');
+    }
+}
 
+function showComputerChoice(pcChoice) {
+    if (pcChoice === 'rock') {
+        imgRockPC.classList.remove('hidden');
+        imgPaperPC.classList.add('hidden');
+        imgScissorsPC.classList.add('hidden');
+    } else if (pcChoice === 'paper') {
+        imgRockPC.classList.add('hidden');
+        imgPaperPC.classList.remove('hidden');
+        imgScissorsPC.classList.add('hidden');
+    } else if (pcChoice === 'scissors') {
+        imgRockPC.classList.add('hidden');
+        imgPaperPC.classList.add('hidden');
+        imgScissorsPC.classList.remove('hidden');
+    }
+}
+
+function hideAllImages() {
+    // Oculta todas las imágenes
+    imgRock.classList.add('hidden');
+    imgPaper.classList.add('hidden');
+    imgScissors.classList.add('hidden');
+    imgRockPC.classList.add('hidden');
+    imgPaperPC.classList.add('hidden');
+    imgScissorsPC.classList.add('hidden');
+}
 
 function compare (userChoice, pcChoice){
     if (userChoice === 'rock' && pcChoice === 'scissors'){
@@ -60,37 +109,38 @@ function compare (userChoice, pcChoice){
         pcPoints++;
     }
     if (playerPoints === 3 || pcPoints === 3) {
-        endGame(); // Llama a la función para finalizar el juego
+        endGame();
     }
 }
 
 function endGame() {
-    button.classList.add('hidden'); // Agrega la clase 'hidden' al botón de juego
-    buttonReset.classList.remove('hidden'); // Quita la clase 'hidden' al botón de reset
+    button.classList.add('hidden');
+    buttonReset.classList.remove('hidden');
     select.classList.add('hidden');
     result.innerHTML = '¡Game over!';
 }
+
 function renderPoints() {
     pointPlayer.innerHTML = `Jugador: ${playerPoints}`;
     pointPc.innerHTML = `Ordenador: ${pcPoints}`;
 }
 
-
     //función manejadora
 
-function handleClickbutton(event){
-    event.preventDefault();
-    const userResult = userChoice();
-    const pcResult = pcChoice();
-    compare (userResult, pcResult);
-    renderPoints();
-    console.log(`Elección del PC: ${pcResult}`); 
-}
+    function handleClickbutton(event) {
+        event.preventDefault();
+        const userResult = userChoice();
+        const pcResult = pcChoice();
+        compare(userResult, pcResult);
+        renderPoints();
+        console.log(`Elección del PC: ${pcResult}`);
+        showComputerChoice(pcResult);
+        showPlayerChoice(userResult);
+    }
 
 
 function handleReset(event) {
     event.preventDefault();
-    // Restablecer todas las variables y elementos necesarios
     playerPoints = 0;
     pcPoints = 0;
     games = 0;
@@ -99,6 +149,7 @@ function handleReset(event) {
     button.classList.remove('hidden'); // Quita la clase 'hidden' al botón de juego
     buttonReset.classList.add('hidden'); // Agrega la clase 'hidden' al botón de reset
     select.classList.remove('hidden');
+    hideAllImages();
 }
 
 /*******Eventos ***********/

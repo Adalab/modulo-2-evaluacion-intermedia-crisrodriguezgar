@@ -13,6 +13,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .container {
@@ -51,6 +52,10 @@ html {
   .subtitle {
     font-size: 2rem;
   }
+}
+.player{
+  display: flex;
+  justify-content: center;
 }
 
 select,
