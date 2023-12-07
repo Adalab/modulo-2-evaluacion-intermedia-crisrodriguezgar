@@ -28,7 +28,6 @@ let games = 0;
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
 }
-    
 
 function userChoice(){
     const valueText = select.value;
@@ -146,8 +145,8 @@ function handleReset(event) {
     games = 0;
     renderPoints();
     result.innerHTML = '¡Vamos a jugar!';
-    button.classList.remove('hidden'); // Quita la clase 'hidden' al botón de juego
-    buttonReset.classList.add('hidden'); // Agrega la clase 'hidden' al botón de reset
+    button.classList.remove('hidden');
+    buttonReset.classList.add('hidden');
     select.classList.remove('hidden');
     hideAllImages();
 }
