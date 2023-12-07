@@ -114,3 +114,7 @@ footer {
   padding-inline: 0.5rem;
   color: #fe9393;
 }
+
+.hidden {
+  display: none;
+}
