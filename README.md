@@ -7,9 +7,9 @@ This is the rock, paper, scissors game made with Java Script 🎮✨. The user w
 ## 📋 Initial Requeriments
 
 - Develop the children's game rock, paper, scissors with these rules:
-  - Stone crushes Scissors :rock:✂️
+  - Stone crushes Scissors ✊✂️
   - Scissors cut paper ✂️📄
-  - Paper wraps the Stone 📄:rock:
+  - Paper wraps the Stone 📄✊
 
 ## 🌟 Quality Requirements
 
@@ -38,5 +38,7 @@ I'm an student and as I stated before am learning a whole lot of Front End Devel
 [![Autor](https://img.shields.io/badge/-%20Cristina%20Rodriguez%20-%20pink?logo=github&labelColor=grey&color=rgb(240%2C%2093%2C%20215))](https://github.com/crisrodriguezgar)
 
 ## 🏆 Codefactor
+
+[![CodeFactor](https://www.codefactor.io/repository/github/crisrodriguezgar/piedra-papel-tijeras/badge)](https://www.codefactor.io/repository/github/crisrodriguezgar/piedra-papel-tijeras)
 
 ### Enjoy it!
