@@ -27,7 +27,6 @@ function userChoice(){
     return valueText;
 }
 
-
 function pcChoice(){
     
     const randomNumber = getRandomNumber(9);
@@ -42,6 +41,7 @@ function pcChoice(){
     }
     return result;
 }
+
 
 function compare (userChoice, pcChoice){
     if (userChoice === 'rock' && pcChoice === 'scissors'){
@@ -84,6 +84,7 @@ function handleClickbutton(event){
     const pcResult = pcChoice();
     compare (userResult, pcResult);
     renderPoints();
+    console.log(`Elección del PC: ${pcResult}`); 
 }
 
 
